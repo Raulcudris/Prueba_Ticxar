@@ -1,0 +1,491 @@
+{
+	"info": {
+		"_postman_id": "7f8dbd24-83e9-4017-83fd-bc037ec8854c",
+		"name": "Api-Prueba",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ObtenerEstudiantes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:15397/api/Estudiante",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "15397",
+					"path": [
+						"api",
+						"Estudiante"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerEstudiante(id)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:15397/api/Estudiante/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "15397",
+					"path": [
+						"api",
+						"Estudiante",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearEstudiante",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n     {\r\n        \"tipo_Identificacion\": \"TI\",\r\n        \"numero_Identificacion\": \"4979025756\",\r\n        \"nombre\": \"BREINER \",\r\n        \"apellido\": \"TORRES \",\r\n        \"sexo\": \"M\",\r\n        \"fecha_Nacimiento\": \"1993-09-18T00:00:00\",\r\n        \"correo_Electronico\": \"denis@gmail.com\",\r\n        \"telefono\": \"3105533662\"\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:15397/api/Estudiante",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "15397",
+					"path": [
+						"api",
+						"Estudiante"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ModificarEstudiante",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n     {\r\n        \"tipo_Identificacion\": \"TI\",\r\n        \"numero_Identificacion\": \"4979025756\\r\\n\",\r\n        \"nombre\": \"BREINER \\r\\n\",\r\n        \"apellido\": \"TORRES \\r\\n\",\r\n        \"sexo\": \"M\",\r\n        \"fecha_Nacimiento\": \"1993-09-18T00:00:00\",\r\n        \"correo_Electronico\": \"denis@gmail.com\\r\\n\",\r\n        \"telefono\": \"3105533662\\r\\n\"\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:15397/api/Estudiante",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "15397",
+					"path": [
+						"api",
+						"Estudiante"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarEstudiante",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:15397/api/Estudiante/143",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "15397",
+					"path": [
+						"api",
+						"Estudiante",
+						"143"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerProfesores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:15397/api/Profesor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "15397",
+					"path": [
+						"api",
+						"Profesor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerProfesor(id)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:15397/api/Profesor/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "15397",
+					"path": [
+						"api",
+						"Profesor",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearProfesor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"profesor_Id\": 21,\r\n        \"tipo_Identificacion\": \"CC\",\r\n        \"numero_Identificacion\": \"49790257\",\r\n        \"nombre\": \"xxx \",\r\n        \"apellido\": \"xxxxxx \",\r\n        \"sexo\": \"F\",\r\n        \"fecha_Nacimiento\": \"1993-09-18T00:00:00\",\r\n        \"correo_Electronico\": \"denis@gmail.com\",\r\n        \"telefono\": \"3105533662\"\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:15397/api/Estudiante",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "15397",
+					"path": [
+						"api",
+						"Estudiante"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ModificarProfesor",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"Profesor_Id\": 1,\r\n        \"tipo_Identificacion\": \"CC\",\r\n        \"numero_Identificacion\": \"49790257\",\r\n        \"nombre\": \"Diana \",\r\n        \"apellido\": \"SEPULVEDA \",\r\n        \"sexo\": \"F\",\r\n        \"fecha_Nacimiento\": \"1993-09-18T00:00:00\",\r\n        \"direccion\": \"Calle16a 25-77\",\r\n        \"correo_Electronico\": \"denis@gmail.com\",\r\n        \"telefono\": \"3105533662\"\r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:15397/api/Estudiante/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "15397",
+					"path": [
+						"api",
+						"Estudiante",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarProfesor",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:15397/api/Profesor/23",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "15397",
+					"path": [
+						"api",
+						"Profesor",
+						"23"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerMaterias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:15397/api/Materias",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "15397",
+					"path": [
+						"api",
+						"Materias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerMaterias(Id)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:15397/api/Materias/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "15397",
+					"path": [
+						"api",
+						"Materias",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearMaterias",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\": \"xxxx\",\r\n    \"nombre\": \"xxxxxx\",\r\n    \"descripcion\": \"Ciencias xxxx\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:15397/api/Materias",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "15397",
+					"path": [
+						"api",
+						"Materias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EliminarProfesor",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:15397/api/Materias/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "15397",
+					"path": [
+						"api",
+						"Materias",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerNotas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:15397/api/Notas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "15397",
+					"path": [
+						"api",
+						"Notas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerNota(id)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:15397/api/Notas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "15397",
+					"path": [
+						"api",
+						"Notas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CrearNota",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"materia_Id\": 1,\r\n  \"profesor_Id\": 1,\r\n  \"estudiante_Id\": 2,\r\n  \"calificacion\": 5,\r\n  \"descripcion\": \"xxxxxxx\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:15397/api/Notas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "15397",
+					"path": [
+						"api",
+						"Notas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerNotas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:15397/api/Notas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "15397",
+					"path": [
+						"api",
+						"Notas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ModificarNotas",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nota_Id\": 52,\r\n    \"materia_Id\": 1,\r\n    \"profesor_Id\": 1,\r\n    \"estudiante_Id\": 2,\r\n    \"calificacion\": 5,\r\n    \"descripcion\": \"Modificada\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:15397/api/Notas/52",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "15397",
+					"path": [
+						"api",
+						"Notas",
+						"52"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ObtenerNota(id)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:15397/api/Notas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "15397",
+					"path": [
+						"api",
+						"Notas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

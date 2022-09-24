@@ -13,22 +13,24 @@ namespace API_Academia.Models
         [Key]
         public int Estudiante_Id { get; set; }
 
-        [Required(ErrorMessage = "Required")]
+        [Required(ErrorMessage = "Requerido")]
         public string Tipo_Identificacion { get; set; }
 
-        [Required(ErrorMessage = "Required")]
+        [Required(ErrorMessage = "Requerido")]
         public string Numero_Identificacion { get; set; }
 
-        [Required(ErrorMessage = "Required")]
+        [Required(ErrorMessage = "Requerido")]
+        [StringLength(100)]
         public string Nombre { get; set; }
 
-        [Required(ErrorMessage = "Required")]
+        [Required(ErrorMessage = "Requerido")]
+        [StringLength(100)]
         public string Apellido { get; set; }
 
-        [Required(ErrorMessage = "Required")]
+        [Required(ErrorMessage = "Requerido")]
         public string Sexo { get; set; }
 
-        [Required(ErrorMessage = "Required")]
+        [Required(ErrorMessage = "Requerido")]
         public DateTime Fecha_Nacimiento { get; set; }
         public string Direccion { get; set; }
         public string Correo_Electronico { get; set; }

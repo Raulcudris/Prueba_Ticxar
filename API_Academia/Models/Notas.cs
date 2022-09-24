@@ -13,10 +13,13 @@ namespace API_Academia.Models
 
         [Key]
         public int Nota_Id { get; set; }
+        [Required(ErrorMessage = "Requerido")]
         public int Materia_Id { get; set; }
+        [Required(ErrorMessage = "Requerido")]
         public int Profesor_Id { get; set; }
-        public int Estudiante_Id { get; set; }        
-      
+        [Required(ErrorMessage = "Requerido")]
+        public int Estudiante_Id { get; set; }
+        [Required(ErrorMessage = "Requerido")]
         public double Calificacion { get; set; }
       
         public string Descripcion { get; set; }
